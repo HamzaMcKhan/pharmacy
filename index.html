@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>The Pharmacy</title>
+  <meta
+    name="description"
+    content="The Pharmacy - fragrances, vitamins, supplements, and wellness essentials."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar container">
+      <a href="#" class="logo-wrap" aria-label="The Pharmacy home">
+        <!-- PLACEHOLDER: Company logo image can go here later -->
+        <div class="logo-box">
+          <span class="logo-main">THE</span>
+          <span class="logo-sub">PHARMACY</span>
+        </div>
+      </a>
+
+      <form class="search-wrap" action="#" method="get">
+        <label for="site-search" class="sr-only">Search products</label>
+        <input
+          type="text"
+          id="site-search"
+          placeholder="Search fragrances, vitamins, supplements..."
+        />
+        <button type="submit" class="search-btn" aria-label="Search">
+          🔍
+        </button>
+      </form>
+
+      <div class="header-actions">
+        <a href="#" class="header-btn account-btn">
+          <span class="btn-icon">👤</span>
+          <span class="btn-text">
+            <strong>Account</strong>
+            <small>Sign in / Register</small>
+          </span>
+        </a>
+
+        <a href="#" class="header-btn cart-btn">
+          <span class="btn-icon">🛒</span>
+          <span class="cart-price">$0.00</span>
+        </a>
+      </div>
+    </div>
+
+    <nav class="category-bar">
+      <div class="container nav-links">
+        <a href="#">Fragrance</a>
+        <a href="#">Vitamins</a>
+        <a href="#">Supplements</a>
+        <a href="#">Beauty</a>
+        <a href="#">Wellness</a>
+        <a href="#">Daily Essentials</a>
+        <a href="#">Gift Ideas</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Limited-time seasonal event</p>
+          <h1>Wellness picks, signature scents, and everyday value.</h1>
+          <p class="hero-text">
+            Explore fictional pharmacy favourites across fragrance and vitamins,
+            with smart recommendations and simple discovery.
+          </p>
+          <div class="hero-actions">
+            <a href="#" class="primary-btn">Browse highlights</a>
+            <a href="#" class="secondary-btn">View featured deals</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Current promotion banner">
+            <img
+              src="assets/images/promotions/img1.png"
+              alt="The Pharmacy promotional banner"
+              class="hero-banner-image"
+            />
+        </div>
+      </div>
+    </section>
+
+    <section class="brands-section container">
+      <div class="section-heading">
+        <h2>Featured brands</h2>
+        <p>Five fictional pharmacy-inspired brands for the prototype.</p>
+      </div>
+
+      <div class="brands-grid">
+          <a href="#" class="brand-card" aria-label="North Harbour brand">
+            <img
+              src="assets/images/brands/nh.png"
+              alt="North Harbour"
+              class="brand-image"
+            />
+            <span>North Harbour</span>
+          </a>
+      
+          <a href="#" class="brand-card" aria-label="BlueWattle brand">
+            <img
+              src="assets/images/brands/bw.png"
+              alt="BlueWattle"
+              class="brand-image"
+            />
+            <span>BlueWattle</span>
+          </a>
+      
+          <a href="#" class="brand-card" aria-label="Southern Bloom brand">
+            <img
+              src="assets/images/brands/sb.png"
+              alt="Southern Bloom"
+              class="brand-image"
+            />
+            <span>Southern Bloom</span>
+          </a>
+      
+          <a href="#" class="brand-card" aria-label="VitalRoot brand">
+            <img
+              src="assets/images/brands/vr.png"
+              alt="VitalRoot"
+              class="brand-image"
+            />
+            <span>VitalRoot</span>
+          </a>
+      
+          <a href="#" class="brand-card" aria-label="Pure Horizon brand">
+            <img
+              src="assets/images/brands/ph.png"
+              alt="Pure Horizon"
+              class="brand-image"
+            />
+            <span>Pure Horizon</span>
+          </a>
+        </div>
+    </section>
+
+    <section class="products-section container">
+      <div class="section-heading">
+        <h2>Explore the range</h2>
+        <p>
+          A small selection representing fragrance and vitamin diversity.
+        </p>
+      </div>
+
+      <div class="products-grid" id="featured-products">
+        <!-- Product cards injected by JavaScript -->
+      </div>
+    </section>
+
+    <section class="support-links-section">
+      <div class="container support-links-grid">
+        <div>
+          <h3>Shop</h3>
+          <ul>
+            <li><a href="#">Catalogue</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Click & Collect</a></li>
+            <li><a href="#">Delivery Info</a></li>
+            <li><a href="#">Store Availability</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Health & Wellness</h3>
+          <ul>
+            <li><a href="#">Fragrance Advice</a></li>
+            <li><a href="#">Daily Vitamins</a></li>
+            <li><a href="#">Supplement Guide</a></li>
+            <li><a href="#">Wellness Tips</a></li>
+            <li><a href="#">Self Care</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Help & Support</h3>
+          <ul>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Partnerships</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-social-section">
+      <div class="container newsletter-social-grid">
+        <div class="newsletter-block">
+          <h3>Get offers and updates</h3>
+          <p>Stay in the loop for fictional launch drops and wellness picks.</p>
+          <form class="newsletter-form" action="#" method="post">
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              placeholder="Enter your email address"
+            />
+            <button type="submit">Join</button>
+          </form>
+        </div>
+
+        <div class="social-block">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="YouTube">YouTube</a>
+            <a href="#" aria-label="TikTok">TikTok</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button
+    id="chat-toggle"
+    class="chat-toggle"
+    type="button"
+    aria-label="Open pharmacy assistant"
+    aria-expanded="false"
+    aria-controls="chat-panel"
+  >
+    Chat
+  </button>
+
+  <aside id="chat-panel" class="chat-panel" aria-hidden="true">
+    <div class="chat-panel-header">
+      <div>
+        <h3>Pharmacy Assistant</h3>
+        <p>Ask about products, prices, and suitability.</p>
+      </div>
+      <button id="chat-close" class="chat-close-btn" type="button" aria-label="Close chat">
+        ✕
+      </button>
+    </div>
+
+    <div class="chat-messages" id="chat-messages">
+      <div class="message assistant">
+        Hi — I can help with fragrances, vitamins, deals, and simple product questions.
+      </div>
+      <div class="message assistant">
+        Try asking: “Which unisex fragrance is on sale?” or “Show me a gluten-free women’s multivitamin.”
+      </div>
+    </div>
+
+    <form id="chat-form" class="chat-form">
+      <label for="chat-input" class="sr-only">Type your message</label>
+      <input
+        id="chat-input"
+        type="text"
+        placeholder="Ask the assistant..."
+        autocomplete="off"
+      />
+      <button type="submit">Send</button>
+    </form>
+  </aside>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© Muhammad Hamza Khan 2026. All rights reserved.</p>
+    </div>
+  </footer>
+
+    <div id="disclaimer-modal" class="disclaimer-modal" aria-hidden="false">
+    <div class="disclaimer-box" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
+      <h2 id="disclaimer-title">Important Notice</h2>
+      <p>
+        This website is a fictional pharmacy simulation created for demonstration and prototype purposes only.
+        Any resemblance to any real business, website, products, or services is unintended and purely coincidental.
+      </p>
+      <p>
+        The chatbot on this website is an AI-powered prototype and may produce incorrect, incomplete, or unsuitable responses.
+        Nothing on this website should be treated as medical, pharmaceutical, legal, or professional advice.
+      </p>
+      <p>
+        By continuing to use this website, you acknowledge that this is a demonstration only and that the owner/developer
+        accepts no liability for reliance placed on any content or chatbot response presented here.
+      </p>
+      <button id="disclaimer-accept" class="disclaimer-btn" type="button">
+        I Understand
+      </button>
+    </div>
+  </div>
+  <script src="data/featured-products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
