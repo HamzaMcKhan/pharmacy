@@ -1,3 +1,5 @@
+const API_BASE_URL = "https://pharmacy-web-demo.onrender.com";
+
 function formatPrice(value) {
   return `$${Number(value).toFixed(2)}`;
 }
@@ -79,7 +81,7 @@ function appendMessage(role, text) {
 }
 
 async function sendMessageToBackend(message) {
-  const response = await fetch("http://127.0.0.1:8001/chat", {
+  const response = await fetch(`${API_BASE_URL}/chat`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
