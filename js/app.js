@@ -160,9 +160,16 @@ function initDisclaimerModal() {
 
   if (!modal || !acceptBtn) return;
 
+  const alreadyAccepted = localStorage.getItem("disclaimerAccepted");
+
+  if (alreadyAccepted === "true") {
+    modal.classList.add("hidden");
+    return;
+  }
+
   acceptBtn.addEventListener("click", () => {
     modal.classList.add("hidden");
-    modal.setAttribute("aria-hidden", "true");
+    localStorage.setItem("disclaimerAccepted", "true");
   });
 }
 
